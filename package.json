@@ -1,0 +1,38 @@
+{
+  "name": "cert-warning-list-proxy",
+  "version": "0.0.1",
+  "description": "Cloudflare Worker proxy for hole.cert.pl/domains/",
+  "keywords": [
+    "cloudflare",
+    "worker",
+    "proxy",
+    "hole.cert.pl",
+    "domains",
+    "cybersecurity",
+    "cors"
+  ],
+  "author": {
+    "name": "Silesian Solutions",
+    "url": "https://silesiansolutions.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silesiansolutions/cert-warning-list-proxy"
+  },
+  "main": "src/worker.js",
+  "scripts": {
+    "dev": "npx wrangler dev",
+    "deploy": "npx wrangler deploy",
+    "logs": "npx wrangler tail",
+    "delete": "npx wrangler delete cert-warning-list-proxy"
+  },
+  "packageManager": "pnpm@10.0.0",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.16.1"
+  }
+}
